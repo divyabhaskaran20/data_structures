@@ -1,0 +1,39 @@
+\hypertarget{ex__basic__list_8c}{}\doxysection{example/ex\+\_\+basic\+\_\+list.c File Reference}
+\label{ex__basic__list_8c}\index{example/ex\_basic\_list.c@{example/ex\_basic\_list.c}}
+
+
+C Exmaple to use the A\+PI for single linked list.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}../single\+\_\+list/basic\+\_\+list.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../single\+\_\+list/coding\+\_\+problems.\+h\char`\"{}}\newline
+Include dependency graph for ex\+\_\+basic\+\_\+list.\+c\+:
+% FIG 0
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{ex__basic__list_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+C Exmaple to use the A\+PI for single linked list. 
+
+\begin{DoxyAuthor}{Author}
+Divya Bhaskaran
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+09/08/2023 
+\end{DoxyDate}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{ex__basic__list_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{ex__basic__list_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{ex\_basic\_list.c@{ex\_basic\_list.c}!main@{main}}
+\index{main@{main}!ex\_basic\_list.c@{ex\_basic\_list.c}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This is the main function 

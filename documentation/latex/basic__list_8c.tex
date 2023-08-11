@@ -1,0 +1,204 @@
+\hypertarget{basic__list_8c}{}\doxysection{single\+\_\+list/basic\+\_\+list.c File Reference}
+\label{basic__list_8c}\index{single\_list/basic\_list.c@{single\_list/basic\_list.c}}
+
+
+This c File features insert/delete/display features of linked list.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}basic\+\_\+list.\+h\char`\"{}}\newline
+Include dependency graph for basic\+\_\+list.\+c\+:
+% FIG 0
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{basic__list_8c_a374992f61dc83af4114501112d5f4d25}{rear\+\_\+insert}} (\mbox{\hyperlink{basic__list_8h_a7fe0b37e317671ac1599a8346c0b4c67}{L\+I\+N\+K\+\_\+\+I\+N\+FO}} $\ast$l, int data)
+\begin{DoxyCompactList}\small\item\em Insert Elements at the end of the linked List. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{basic__list_8c_a5763e63cf721afcee1c456b8f92628be}{front\+\_\+insert}} (\mbox{\hyperlink{basic__list_8h_a7fe0b37e317671ac1599a8346c0b4c67}{L\+I\+N\+K\+\_\+\+I\+N\+FO}} $\ast$l, int data)
+\begin{DoxyCompactList}\small\item\em Insert Elements at the Start of the linked List. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{basic__list_8c_a68ec6f0970442d01af57d07a89c297c4}{position\+\_\+insert}} (\mbox{\hyperlink{basic__list_8h_a7fe0b37e317671ac1599a8346c0b4c67}{L\+I\+N\+K\+\_\+\+I\+N\+FO}} $\ast$l, int data, int pos)
+\begin{DoxyCompactList}\small\item\em Insert Elements at any given position in the linked List. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{basic__list_8c_a79b5025ff31b753556697ade9c6993d4}{mid\+\_\+insert}} (\mbox{\hyperlink{basic__list_8h_a7fe0b37e317671ac1599a8346c0b4c67}{L\+I\+N\+K\+\_\+\+I\+N\+FO}} $\ast$l, int data)
+\begin{DoxyCompactList}\small\item\em Insert Elements at mid position in the linked List. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{basic__list_8c_a22a397eb3fe5abe3895988c776830610}{print\+\_\+list}} (\mbox{\hyperlink{basic__list_8h_a7fe0b37e317671ac1599a8346c0b4c67}{L\+I\+N\+K\+\_\+\+I\+N\+FO}} $\ast$l)
+\begin{DoxyCompactList}\small\item\em Display Elements in the linked List. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{basic__list_8c_ace7d8511a13cafabd13c4603180c4ab1}{front\+\_\+delete}} (\mbox{\hyperlink{basic__list_8h_a7fe0b37e317671ac1599a8346c0b4c67}{L\+I\+N\+K\+\_\+\+I\+N\+FO}} $\ast$l)
+\begin{DoxyCompactList}\small\item\em Delete Elements at the beginning of linked List. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{basic__list_8c_a265c20d181f0dcb5a5f52d1ff9a5af5e}{rear\+\_\+delete}} (\mbox{\hyperlink{basic__list_8h_a7fe0b37e317671ac1599a8346c0b4c67}{L\+I\+N\+K\+\_\+\+I\+N\+FO}} $\ast$l)
+\begin{DoxyCompactList}\small\item\em Delete Elements at end of linked List. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{basic__list_8c_ae7b50acad4c5a4bfc1c4a414ed37d93c}{mid\+\_\+delete}} (\mbox{\hyperlink{basic__list_8h_a7fe0b37e317671ac1599a8346c0b4c67}{L\+I\+N\+K\+\_\+\+I\+N\+FO}} $\ast$l)
+\begin{DoxyCompactList}\small\item\em Delete Elements at mid of linked List. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{basic__list_8c_ad21f62168e00263caa76ab34f5da7d93}\label{basic__list_8c_ad21f62168e00263caa76ab34f5da7d93}} 
+void {\bfseries position\+\_\+delete} (\mbox{\hyperlink{basic__list_8h_a7fe0b37e317671ac1599a8346c0b4c67}{L\+I\+N\+K\+\_\+\+I\+N\+FO}} $\ast$l)
+\item 
+\mbox{\Hypertarget{basic__list_8c_a75cc714f4bb282b9c246892fb18541dd}\label{basic__list_8c_a75cc714f4bb282b9c246892fb18541dd}} 
+void {\bfseries data\+\_\+delete} (\mbox{\hyperlink{basic__list_8h_a7fe0b37e317671ac1599a8346c0b4c67}{L\+I\+N\+K\+\_\+\+I\+N\+FO}} $\ast$l, int data)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This c File features insert/delete/display features of linked list. 
+
+\begin{DoxyAuthor}{Author}
+Divya Bhaskaran
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+09/08/2023 
+\end{DoxyDate}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{basic__list_8c_ace7d8511a13cafabd13c4603180c4ab1}\label{basic__list_8c_ace7d8511a13cafabd13c4603180c4ab1}} 
+\index{basic\_list.c@{basic\_list.c}!front\_delete@{front\_delete}}
+\index{front\_delete@{front\_delete}!basic\_list.c@{basic\_list.c}}
+\doxysubsubsection{\texorpdfstring{front\_delete()}{front\_delete()}}
+{\footnotesize\ttfamily void front\+\_\+delete (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{basic__list_8h_a7fe0b37e317671ac1599a8346c0b4c67}{L\+I\+N\+K\+\_\+\+I\+N\+FO}} $\ast$}]{l }\end{DoxyParamCaption})}
+
+
+
+Delete Elements at the beginning of linked List. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em l} & Pointer to structure to hold the master node \& number of elements in list. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{[}out\mbox{]} void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{basic__list_8c_a5763e63cf721afcee1c456b8f92628be}\label{basic__list_8c_a5763e63cf721afcee1c456b8f92628be}} 
+\index{basic\_list.c@{basic\_list.c}!front\_insert@{front\_insert}}
+\index{front\_insert@{front\_insert}!basic\_list.c@{basic\_list.c}}
+\doxysubsubsection{\texorpdfstring{front\_insert()}{front\_insert()}}
+{\footnotesize\ttfamily int front\+\_\+insert (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{basic__list_8h_a7fe0b37e317671ac1599a8346c0b4c67}{L\+I\+N\+K\+\_\+\+I\+N\+FO}} $\ast$}]{l,  }\item[{int}]{data }\end{DoxyParamCaption})}
+
+
+
+Insert Elements at the Start of the linked List. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em l} & Pointer to structure to hold the master node \& number of elements in list. \\
+\hline
+\mbox{\texttt{ in}}  & {\em data} & data to store in the existing list. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{[}out\mbox{]} 1/0 1-\/ Successfull insertion / 0 -\/ Failure 
+\end{DoxyReturn}
+\mbox{\Hypertarget{basic__list_8c_ae7b50acad4c5a4bfc1c4a414ed37d93c}\label{basic__list_8c_ae7b50acad4c5a4bfc1c4a414ed37d93c}} 
+\index{basic\_list.c@{basic\_list.c}!mid\_delete@{mid\_delete}}
+\index{mid\_delete@{mid\_delete}!basic\_list.c@{basic\_list.c}}
+\doxysubsubsection{\texorpdfstring{mid\_delete()}{mid\_delete()}}
+{\footnotesize\ttfamily void mid\+\_\+delete (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{basic__list_8h_a7fe0b37e317671ac1599a8346c0b4c67}{L\+I\+N\+K\+\_\+\+I\+N\+FO}} $\ast$}]{l }\end{DoxyParamCaption})}
+
+
+
+Delete Elements at mid of linked List. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em l} & Pointer to structure to hold the master node \& number of elements in list. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{[}out\mbox{]} void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{basic__list_8c_a79b5025ff31b753556697ade9c6993d4}\label{basic__list_8c_a79b5025ff31b753556697ade9c6993d4}} 
+\index{basic\_list.c@{basic\_list.c}!mid\_insert@{mid\_insert}}
+\index{mid\_insert@{mid\_insert}!basic\_list.c@{basic\_list.c}}
+\doxysubsubsection{\texorpdfstring{mid\_insert()}{mid\_insert()}}
+{\footnotesize\ttfamily int mid\+\_\+insert (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{basic__list_8h_a7fe0b37e317671ac1599a8346c0b4c67}{L\+I\+N\+K\+\_\+\+I\+N\+FO}} $\ast$}]{l,  }\item[{int}]{data }\end{DoxyParamCaption})}
+
+
+
+Insert Elements at mid position in the linked List. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em l} & Pointer to structure to hold the master node \& number of elements in list. \\
+\hline
+\mbox{\texttt{ in}}  & {\em data} & data to store in the existing list. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{[}out\mbox{]} 1/0 1-\/ Successfull insertion / 0 -\/ Failure 
+\end{DoxyReturn}
+\mbox{\Hypertarget{basic__list_8c_a68ec6f0970442d01af57d07a89c297c4}\label{basic__list_8c_a68ec6f0970442d01af57d07a89c297c4}} 
+\index{basic\_list.c@{basic\_list.c}!position\_insert@{position\_insert}}
+\index{position\_insert@{position\_insert}!basic\_list.c@{basic\_list.c}}
+\doxysubsubsection{\texorpdfstring{position\_insert()}{position\_insert()}}
+{\footnotesize\ttfamily int position\+\_\+insert (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{basic__list_8h_a7fe0b37e317671ac1599a8346c0b4c67}{L\+I\+N\+K\+\_\+\+I\+N\+FO}} $\ast$}]{l,  }\item[{int}]{data,  }\item[{int}]{pos }\end{DoxyParamCaption})}
+
+
+
+Insert Elements at any given position in the linked List. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em l} & Pointer to structure to hold the master node \& number of elements in list. \\
+\hline
+\mbox{\texttt{ in}}  & {\em data} & data to store in the existing list. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pos} & Position at data to inserted in existing list \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{[}out\mbox{]} 1/0 1-\/ Successfull insertion / 0 -\/ Failure 
+\end{DoxyReturn}
+\mbox{\Hypertarget{basic__list_8c_a22a397eb3fe5abe3895988c776830610}\label{basic__list_8c_a22a397eb3fe5abe3895988c776830610}} 
+\index{basic\_list.c@{basic\_list.c}!print\_list@{print\_list}}
+\index{print\_list@{print\_list}!basic\_list.c@{basic\_list.c}}
+\doxysubsubsection{\texorpdfstring{print\_list()}{print\_list()}}
+{\footnotesize\ttfamily void print\+\_\+list (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{basic__list_8h_a7fe0b37e317671ac1599a8346c0b4c67}{L\+I\+N\+K\+\_\+\+I\+N\+FO}} $\ast$}]{l }\end{DoxyParamCaption})}
+
+
+
+Display Elements in the linked List. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em l} & Pointer to structure to hold the master node \& number of elements in list. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{basic__list_8c_a265c20d181f0dcb5a5f52d1ff9a5af5e}\label{basic__list_8c_a265c20d181f0dcb5a5f52d1ff9a5af5e}} 
+\index{basic\_list.c@{basic\_list.c}!rear\_delete@{rear\_delete}}
+\index{rear\_delete@{rear\_delete}!basic\_list.c@{basic\_list.c}}
+\doxysubsubsection{\texorpdfstring{rear\_delete()}{rear\_delete()}}
+{\footnotesize\ttfamily void rear\+\_\+delete (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{basic__list_8h_a7fe0b37e317671ac1599a8346c0b4c67}{L\+I\+N\+K\+\_\+\+I\+N\+FO}} $\ast$}]{l }\end{DoxyParamCaption})}
+
+
+
+Delete Elements at end of linked List. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em l} & Pointer to structure to hold the master node \& number of elements in list. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{[}out\mbox{]} void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{basic__list_8c_a374992f61dc83af4114501112d5f4d25}\label{basic__list_8c_a374992f61dc83af4114501112d5f4d25}} 
+\index{basic\_list.c@{basic\_list.c}!rear\_insert@{rear\_insert}}
+\index{rear\_insert@{rear\_insert}!basic\_list.c@{basic\_list.c}}
+\doxysubsubsection{\texorpdfstring{rear\_insert()}{rear\_insert()}}
+{\footnotesize\ttfamily int rear\+\_\+insert (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{basic__list_8h_a7fe0b37e317671ac1599a8346c0b4c67}{L\+I\+N\+K\+\_\+\+I\+N\+FO}} $\ast$}]{l,  }\item[{int}]{data }\end{DoxyParamCaption})}
+
+
+
+Insert Elements at the end of the linked List. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em l} & Pointer to structure to hold the master node \& number of elements in list. \\
+\hline
+\mbox{\texttt{ in}}  & {\em data} & data to store in the existing list. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{[}out\mbox{]} 1/0 1-\/ Successfull insertion / 0 -\/ Failure 
+\end{DoxyReturn}
+$<$ Detailed description after the member
