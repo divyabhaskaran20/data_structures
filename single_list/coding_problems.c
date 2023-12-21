@@ -121,3 +121,152 @@ int challenge2_ptr(LINK_INFO *l){
         return 0;
     }
 }
+
+
+/**
+ * @brief          challenge3
+ *       Problem:  Reverse the even number in the list
+ *       Solution: extract the subsequent even numbers, create a new list with rear insert method and join back new even list with main list on next occurrence of odd number
+ * @param[in]    l    Pointer to structure to hold the master node & number of elements in list.
+ * @return[out]       Void
+ *
+ * Example:         Original : {1,5,6,8,9,10,12,5,3,1,4,6,9}
+ *                  Expected:  {1,5,8,6,9,12,10,5,3,1,6,4,9}
+ */
+void challenge3(LINK_INFO *l) {
+
+    SINGLE_LINKS *temp, *f, *last, *temp2;
+    LINK_INFO g1 = {NULL, 0};
+    int count = 0;
+    if(l->master == NULL){
+        printf("Empty List");
+    } else {
+        temp = l->master;
+        while (temp->next_node_addr != NULL) {
+            f = temp;
+            count = 0;
+            g1.master = NULL;
+            g1.total_cnt = 0;
+            while(temp->next_node_addr->value % 2 == 0){
+                front_insert(&g1, temp->next_node_addr->value);
+                count++;
+                last = temp = temp->next_node_addr;
+            }
+            temp2 = g1.master;
+
+            if(count > 0) {
+                f->next_node_addr = temp2;
+                while (temp2->next_node_addr != NULL){
+                    temp2 = temp2->next_node_addr;
+                }
+                temp2->next_node_addr = last->next_node_addr;
+            }
+            temp = temp->next_node_addr;
+        }
+    }
+}
+
+
+/**
+ * @brief          challenge4
+ *       Problem:  Reverse the list
+ *       Solution: use 2 list, create a new list and insert elements from front
+ * @param[in]    l    Pointer to structure to hold the master node & number of elements in list.
+ * @return[out]       Void
+ *
+ * Example:         Original : {1,5,6,8,9,10,12,5,3,1,4,6,9}
+ *                  Expected:  {9,6,4,1,3,5,12,10,9,8,6,5,1}
+ */
+void challenge4(LINK_INFO *l) {
+
+    SINGLE_LINKS *temp;
+    LINK_INFO new_list = {NULL, 0};
+    if (l->master == NULL){
+        printf("Empty List");
+        return;
+    } else {
+        temp = l->master;
+        while(temp != NULL) {
+            front_insert(&new_list, temp->value);
+            temp = temp->next_node_addr;
+        }
+        l->master = new_list.master;
+    }
+    return;
+}
+
+
+/**
+ * @brief          challenge4
+ *       Problem:  Reverse the list
+ *       Solution: use 3 pointer method, cur: points to reversed list, prev and temp: points to the next elements
+ * @param[in]    l    Pointer to structure to hold the master node & number of elements in list.
+ * @return[out]       Void
+ *
+ * Example:         Original : {1,5,6,8,9,10,12,5,3,1,4,6,9}
+ *                  Expected:  {9,6,4,1,3,5,12,10,9,8,6,5,1}
+ */
+void challenge4_ptr(LINK_INFO *l) {
+
+    SINGLE_LINKS *temp, *prev, *cur;
+    if (l->master == NULL){
+        printf("Empty List");
+        return;
+    } else {
+      temp = l->master;
+      if(temp->next_node_addr == NULL) {
+          return;
+      }
+      prev = cur = temp;
+      prev = temp = temp->next_node_addr;
+      cur->next_node_addr = NULL;
+     while(temp != NULL) {
+          temp = temp->next_node_addr;
+          prev->next_node_addr = cur;
+          cur = prev;
+          prev = temp;
+
+      }
+     l->master = cur;
+    }
+    return;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

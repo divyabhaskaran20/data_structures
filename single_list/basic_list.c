@@ -289,3 +289,12 @@ void data_delete(LINK_INFO *l, int data) {
 }
 
 
+
+/*TODO*/
+void reverse_list(LINK_INFO *l) {
+    SINGLE_LINKS *temp, *prev;
+    if (!Is_Empty(l)) {
+        /*TODO*/
+    }
+    return;
+}

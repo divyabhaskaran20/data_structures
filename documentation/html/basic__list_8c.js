@@ -9,5 +9,6 @@ var basic__list_8c =
     [ "position_insert", "basic__list_8c.html#a68ec6f0970442d01af57d07a89c297c4", null ],
     [ "print_list", "basic__list_8c.html#a22a397eb3fe5abe3895988c776830610", null ],
     [ "rear_delete", "basic__list_8c.html#a265c20d181f0dcb5a5f52d1ff9a5af5e", null ],
-    [ "rear_insert", "basic__list_8c.html#a374992f61dc83af4114501112d5f4d25", null ]
+    [ "rear_insert", "basic__list_8c.html#a374992f61dc83af4114501112d5f4d25", null ],
+    [ "reverse_list", "basic__list_8c.html#a95d364ebb0ecb680a77b53b11e7261ae", null ]
 ];
